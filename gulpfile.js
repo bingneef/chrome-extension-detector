@@ -1,10 +1,7 @@
 // LOAD STUFF
 var gulp = require('gulp');
-var ts = require('gulp-typescript');
 var coffee = require('gulp-coffee');
-var sass = require('gulp-sass');
 var gutil = require('gulp-util');
-var notify = require("gulp-notify");
 var clean = require("gulp-clean");
 
 
