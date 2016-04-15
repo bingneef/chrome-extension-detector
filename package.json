@@ -9,6 +9,8 @@
   "devDependencies": {
     "gulp-clean": "^0.3.1",
     "gulp-coffee": "latest",
-    "gulp-util": "^3.0.7"
+    "gulp-uglifyjs": "^0.6.2",
+    "gulp-util": "^3.0.7",
+    "gulp-watch": "^4.3.5"
   }
 }

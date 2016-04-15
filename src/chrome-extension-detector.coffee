@@ -1,5 +1,6 @@
 class @ChromeExtensionDetector
   @detect = (url) ->
+    console.log 'here'
     throw 'No extension url defined' unless url?
     promise = new Promise (resolve, reject) ->
       client = new XMLHttpRequest

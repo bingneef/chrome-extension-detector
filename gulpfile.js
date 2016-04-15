@@ -3,11 +3,19 @@ var gulp = require('gulp');
 var coffee = require('gulp-coffee');
 var gutil = require('gulp-util');
 var clean = require("gulp-clean");
+var watch = require('gulp-watch');
+var uglify = require('gulp-uglifyjs');
 
 
 // DEFAULT
 gulp.task('default', ['clean'], function () {
   gulp.start('coffee');
+});
+
+gulp.task('serve', function () {
+  return gulp.src('src/**/*.coffee')
+        .pipe(watch('src/**/*.coffee'))
+        .pipe(gulp.dest('dist'));
 });
 
 gulp.task('coffee', function () {
@@ -19,6 +27,7 @@ gulp.task('coffee', function () {
   });
   return gulp.src('src/**/*.coffee')
     .pipe(c)
+    .pipe(uglify())
     .pipe(gulp.dest('dist'))
 });
 
