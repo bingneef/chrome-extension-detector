@@ -15,11 +15,11 @@ class @ChromeExtensionDetector
     return promise
 
 
-  @jabberGuest = ->
+  @JabberGuest = ->
     url = "jbglbakaieakcdiaiabbihafndhapfki/noop.js"
     @detect url
 
-  @chromeCast = ->
+  @ChromeCast = ->
     url = "boadgeojelhgndaghljhdicfkmllpafd/api_iframe.html"
     @detect url
 
