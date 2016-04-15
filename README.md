@@ -6,7 +6,7 @@ bower install --save chrome-extension-detector
 
 # Example
 (include the script in your page)
-ChromeExtensionDetector.jabberGuest.then(function(data) {var hasJabber = data});
+ChromeExtensionDetector.jabberGuest().then(function(data) {console.log(data)});
 
 ## Currently detectable plugins
 - Chromecast
