@@ -1,0 +1,14 @@
+{
+  "name": "Chrome Extension Detector",
+  "authors": [
+    "Bing Steup <b.steup@sping.nl>"
+  ],
+  "description": "Detect whether a Chrome extension is present on the users system.",
+  "main": "dist/chrome-extension-detector.js",
+  "keywords": [
+    "chrome",
+    "extension"
+  ],
+  "license": "MIT",
+  "homepage": ""
+}

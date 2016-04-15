@@ -1,0 +1,17 @@
+{
+  "name": "chrome-extension-detector",
+  "version": "0.0.1",
+  "description": "Check if chrome extension is installed on the users system",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "es6-promise": "^3.1.2"
+  },
+  "dependencies": {
+    "gulp": "^3.9.1"
+  },
+  "devDependencies": {
+    "gulp-clean": "^0.3.1",
+    "gulp-coffee": "latest",
+    "gulp-util": "^3.0.7"
+  }
+}
