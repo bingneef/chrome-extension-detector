@@ -1,6 +1,5 @@
 class @ChromeExtensionDetector
   @detect = (url) ->
-    console.log 'here'
     throw 'No extension url defined' unless url?
     promise = new Promise (resolve, reject) ->
       client = new XMLHttpRequest
@@ -18,9 +17,12 @@ class @ChromeExtensionDetector
 
   @jabberGuest = ->
     url = "jbglbakaieakcdiaiabbihafndhapfki/noop.js"
-    @detect(url)
+    @detect url
 
   @chromeCast = ->
     url = "boadgeojelhgndaghljhdicfkmllpafd/api_iframe.html"
-    @detect(url)
+    @detect url
 
+  @adBlock = ->
+    url = "gighmmpiobklfepjocnamgkkbiglidom/img/icon24.png"
+    @detect url

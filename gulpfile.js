@@ -8,14 +8,16 @@ var uglify = require('gulp-uglifyjs');
 
 
 // DEFAULT
-gulp.task('default', ['clean'], function () {
+gulp.task('default', function () {
+  console.log('Run gulp build');
+});
+
+gulp.task('build', ['clean'], function () {
   gulp.start('coffee');
 });
 
 gulp.task('serve', function () {
-  return gulp.src('src/**/*.coffee')
-        .pipe(watch('src/**/*.coffee'))
-        .pipe(gulp.dest('dist'));
+  gulp.watch('src/**/*.coffee', ['build']);
 });
 
 gulp.task('coffee', function () {
