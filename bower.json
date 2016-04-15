@@ -1,5 +1,6 @@
 {
-  "name": "Chrome Extension Detector",
+  "name": "chrome-extension-detector",
+  "version": "0.0.1",
   "authors": [
     "Bing Steup <b.steup@sping.nl>"
   ],
@@ -10,5 +11,5 @@
     "extension"
   ],
   "license": "MIT",
-  "homepage": ""
+  "homepage": "https://github.com/bingneef/chrome-extension-detector"
 }
